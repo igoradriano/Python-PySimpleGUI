@@ -1,8 +1,8 @@
 from PySimpleGUI import PySimpleGUI as sg
 #devemos instalar no terminal antes de importar a biblioteca, PySimpleGUI
-
+sg.theme_previewer() #Exibe uma tela com os temas disponíveis, você pode escolher um lá
 #Layout
-sg.theme('Reddit')  # O PySimpletUI tem uma quantidade enorme de temas. Escolhi o "Reddit"
+sg.theme('Dark2')  # O PySimpletUI tem uma quantidade enorme de temas. Escolhi o "Reddit"
 # O PySimpleGUI utiliza uma abordagem de linhas e colunas, no nosso caso precisaremos de 3 linhas e 2 colunas
 layout = [
     [sg.Text('Usuário'),sg.Input(key='usuario',size=(20,1))],   # O valor que passamos para key serve como identificador
