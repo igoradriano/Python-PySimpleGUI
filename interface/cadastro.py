@@ -20,5 +20,6 @@ while True:
         break
     if eventos=='Entrar':      #se clicarem no botão entrar faça
         if valores['usuario'] == 'igor' and valores['senha'] == '123456': #verificando dados
-            print("Bem-vindo a Dev Aprender!")
-#note que a penultima linha desconsideramos a existencia de um banco de dados, consideramos que temos armazenado apenas jhonatan como valor e sua senha respectiva.
+            print("Bem-vindo!") #depois que você inserir seus dados na janela e estiverem corretos, vai aparecer no seu terminal do python esta Mensagem!
+
+#Note que a penultima linha desconsideramos a existencia de um banco de dados, consideramos que temos armazenado apenas jhonatan como valor e sua senha respectiva.
