@@ -1,7 +1,13 @@
+#Devemos instalar no terminal antes de importar a biblioteca, PySimpleGUI
 from PySimpleGUI import PySimpleGUI as sg
-#devemos instalar no terminal antes de importar a biblioteca, PySimpleGUI
+
+# 1. Escolhendo um tema:
 sg.theme_previewer() #Exibe uma tela com os temas disponíveis, você pode escolher um lá
-#Layout
+# outra forma, seria printando a lista de temas no terminal:
+theme_name_list = sg.theme_list() 
+print(theme_name_list) 
+
+# 2. Layout
 sg.theme('Dark2')  # O PySimpletUI tem uma quantidade enorme de temas. Escolhi o "Reddit"
 # O PySimpleGUI utiliza uma abordagem de linhas e colunas, no nosso caso precisaremos de 3 linhas e 2 colunas
 layout = [
@@ -11,9 +17,10 @@ layout = [
     [sg.Button('Entrar')]   #Criando um Botão e nele estará escrito Entrar
 ]
 
-#Janela
+# 3. Janela
 janela = sg.Window('Tela de login',layout)    #Título de Janela = Tela de login
-#Ler os eventos acontecendo na tela
+
+#4. Ler os eventos acontecendo na tela
 while True:
     eventos,valores = janela.read()  #recebe "Tela de login" e o objeto layout armazenados dentro de janela
     if eventos == sg.WINDOW_CLOSED:    #quando a janela for fechada quebre o loop
